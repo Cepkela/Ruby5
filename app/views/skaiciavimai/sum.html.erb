@@ -1,0 +1,14 @@
+<div class="math_design"> <!-- Parenkama css klase -->
+<h1>This is our Sum Function</h1>
+<p>Please select the correct answer</p>
+
+<p><%= @first %> + <%= @second %> =</p>  <!-- Metodas kuris isveda pirma ir antra skaicius is kontrolerio i paragrafa -->
+<br>
+<%= button_to @result, patikrinimas_correct_path, method: :post %> <!-- methodas padarytas mygtukas su teisingu rezultat, priskirtas pathas i teisingo atsakymo puslapi eiti -->
+<br>
+<%= button_to @resultFake1, patikrinimas_incorrect_path, method: :post %> <!-- methodas padarytas mygtukas su neteisingu rezultat, priskirtas pathas i teisingo atsakymo puslapi eiti -->
+<br>
+<%= button_to @resultFake2, patikrinimas_incorrect_path, method: :post %> <!-- methodas padarytas mygtukas su neteisingu rezultat, priskirtas pathas i neteisingo atsakymo puslapi eiti -->
+<br>
+<%= button_to @resultFake3, patikrinimas_incorrect_path, method: :post %> <!-- methodas padarytas mygtukas su neteisingu rezultat, priskirtas pathas i neteisingo atsakymo puslapi eiti -->
+</div>
